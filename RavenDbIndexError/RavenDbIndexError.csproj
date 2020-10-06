@@ -8,11 +8,27 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
-    <PackageReference Include="RavenDB.Client" Version="4.2.104" />
-    <PackageReference Include="RavenDB.Embedded" Version="4.2.8" />
+    <PackageReference Include="RavenDB.Client" Version="4.2.106" />
+    <PackageReference Include="RavenDB.Embedded" Version="4.2.106" />
     <PackageReference Include="xunit" Version="2.4.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
     <PackageReference Include="coverlet.collector" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CSV\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="CSV\BewerberStatus.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="CSV\Bewerbung.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="CSV\Vakanz.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
